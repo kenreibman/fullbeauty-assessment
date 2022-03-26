@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --ff-main: 'Inter';
+
+  --fs-small: 1.6rem;
+  --fs-normal: 1.8rem;
+  --fs-medium: 2.2rem;
+  --fs-large: 2.6rem;
+
+  --light-blue: rgba(30, 145, 223, 1);
+  --black: #000;
+  --light-gray: #f6f6f6;
+  --gray: #4b4b4b;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-main);
+}
+
+.header__brand-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand__logo {
+  width: 9rem;
+}
+
+.brand__name {
+  width: 14rem;
+}
+
+.brand__name h1 {
+  font-size: var(--fs-normal);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header__progress {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.header__progress ul {
+  font-size: var(--fs-small);
+  display: flex;
+  justify-content: space-around;
+}
+.header__progress ul li a {
+  text-decoration: none;
+}
+
+.current {
+  color: var(--black);
+  font-weight: 500;
+}
+
+.order__section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.container__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.info__header {
+  font-size: var(--fs-medium);
+  font-weight: 600;
+}
+
+.info__container {
+  font-size: var(--fs-normal);
+  color: var(--gray);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.btn__edit {
+  font-size: var(--fs-normal);
+  color: var(--light-blue);
+}
+
+/* GLOBAL */
+.container {
+  max-width: 80rem;
+}
+
+.sticky {
+  position: sticky;
+}

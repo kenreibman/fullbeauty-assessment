@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ken Reibman Outlet</title>
+</head>
+<body>
+    <!-- brand and logo -->
+    <header class="header__brand-img">
+        <div class="brand__logo">
+            <img src="img/logo.png" alt="Ken Reibman Outlet">
+        </div>
+        <div class="brand__name">
+            <h1>Ken Reibman Outlet</h1>
+        </div>
+    </header>
+    <!-- checkout progress bar -->
+    <div class="header__progress sticky">
+        <ul role="list">
+            <li><a href="#">Shipping Details</a></li>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <li><a href="#">Payment Details</a></li>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <li><a class="current" href="#">Review Order</a></li>
+        </ul>
+    </div>
+    <!-- checkout content -->
+    <main class="checkout">
+        <section class="order__section">
+            <!-- shipping -->
+            <div class="container container__info">
+                <h2 class="info__header">Shipping</h2>
+                <div class="info__container">
+                    <span class="name">Ken Reibman</span>
+                    <span class="address">1400 Washington Avenue</span>
+                    <span class="city">Albany, NY 12222</span>
+                </div>
+                <a class="btn__edit" href="/">Edit</a>
+            </div>
+            <!-- billing -->
+            <div class="container container__info">
+                <h2 class="info__header">Billing</h2>
+                <div class="info__container">
+                    <span class="name">Ken Reibman</span>
+                    <span class="address">1400 Washington Avenue</span>
+                    <span class="city">Albany, NY 12222</span>
+                </div>
+                <div class="info__container">
+                    <span class="name">Ken Reibman</span>
+                    <span class="card">XXXX-XXXX-XXXX-1111</span>
+                    <span class="expiration">01/2026</span>
+                </div>
+                <a class="btn__edit" href="/">Edit</a>
+            </div>
+            <!-- order -->
+            <div class="container container__info">
+                <h2 class="info__header">Your Order</h2>
+                <a class="btn__edit" href="/">Edit</a>
+                <div class="items__column flex">
+
+                    <div class="item__img">
+                        <img src="" alt="">
+                    </div>
+
+                    <span class="item__name">Item A</span>
+                    <span class="item__price">$60.00</span>
+                    <div class="quantity__container">
+                        <span class="quantity__label">Quantity:</span>
+                        <input class="quantity__value" id="quantityValue" type="number" value="2">
+                    </div>
+                    <span class="item__discount alert">Buy 2 for $100</span>
+                    
+                </div>
+
+                <div class="items__column grid">
+
+                    <div class="item__img">
+                        <img src="" alt="">
+                    </div>
+
+                    <span class="item__name">Item B</span>
+                    <span class="item__price">$70.00</span>
+                    <div class="quantity__container">
+                        <span class="quantity__label">Quantity:</span>
+                        <input class="quantity__value" id="quantityValue" type="number" value="2">
+                    </div>
+                    <span class="item__discount alert">Buy 2 Get 1 Free.</span>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="summary__section">
+
+        </section>
+    </main>
+</body>
+</html>
