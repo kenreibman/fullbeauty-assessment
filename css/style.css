@@ -124,11 +124,8 @@ html {
   background-color: var(--light-gray);
 }
 
-.items__column--method1 {
-  /* Have the two elements side by side */
-}
-
-.items__column--method2 {
+.items__column {
+  border-bottom: 1px solid var(--gray);
 }
 
 .item__img {
