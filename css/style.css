@@ -13,7 +13,8 @@
   --black: #000;
   --light-gray: #f6f6f6;
   --gray: #4b4b4b;
-  --white: rgba(255, 255, 255, 0.85);
+  --white-transparent: rgba(255, 255, 255, 0.85);
+  --white: rgba(255, 255, 255, 1);
 }
 
 html {
@@ -21,16 +22,23 @@ html {
   font-family: var(--ff-main);
 }
 
-.checkout {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+.page-wrapper {
+}
+
+.split {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* .split {
+  display: grid;
 }
 @media screen and (min-width: 1024px) {
-  .checkout {
-    flex-direction: row;
+  .split {
+    grid-template-rows: 1fr;
   }
-}
+} */
 
 .header__brand-img {
   width: 100%;
@@ -57,7 +65,7 @@ html {
 .header__progress {
   padding: 3rem;
   top: 0;
-  background-color: var(--white);
+  background-color: var(--white-transparent);
 }
 
 .header__progress ul {
@@ -158,6 +166,7 @@ html {
 
 /* Summary */
 .order__summary {
+  background-color: var(--white);
   padding: 5rem;
 }
 @media screen and (min-width: 501px) {
@@ -169,8 +178,10 @@ html {
 }
 @media screen and (min-width: 1024px) {
   .order__summary {
+    right: 5rem;
+    top: 30rem;
+
     position: fixed;
-    right: 2rem;
   }
 }
 
@@ -219,12 +230,12 @@ html {
 .btn__lg {
   padding: 1rem 2rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 5rem;
   background-color: var(--light-blue);
   color: var(--white);
   font-size: var(--fs-normal);
   font-weight: 700;
-  max-width: 50rem;
+  display: block;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   transition: background-color 0.3s ease;
 }
@@ -238,6 +249,7 @@ html {
 
 .sticky {
   position: sticky;
+  z-index: 999;
 }
 
 .flex {
