@@ -230,12 +230,13 @@ html {
 .btn__lg {
   padding: 1rem 2rem;
   border: none;
-  border-radius: 5rem;
+  border-radius: 2rem;
   background-color: var(--light-blue);
   color: var(--white);
   font-size: var(--fs-normal);
   font-weight: 700;
   display: block;
+  width: 300px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   transition: background-color 0.3s ease;
 }
