@@ -71,7 +71,8 @@
                         <h2 class="info__header">Your Order</h2>
                         <a class="btn__edit" href="/">Edit</a>
                     </div>
-
+                
+                <div class="items__container">
                     <div class="items__column method1 flex">
 
                         <div class="item__img">
@@ -86,7 +87,7 @@
                             <span class="item__price">$60.00</span>
                             <div class="quantity__container">
                                 <span class="quantity__label">Quantity:</span>
-                                <input class="quantity__value" id="quantityValue" type="number" value="2">
+                                <input class="quantity__value" id="quantityValue" type="number" value="1">
                             </div>
                             <span class="item__discount alert">Buy 2 for $100</span>
                         </div>
@@ -98,14 +99,16 @@
                         <div class="item__img">
                             <img src="img/item-b.jpg" alt="">
                         </div>
-                        <span class="item__name">Item B</span>
-                        <span class="item__price">$70.00</span>
-                        <div class="quantity__container">
-                            <span class="quantity__label">Quantity:</span>
-                            <input class="quantity__value" id="quantityValue" type="number" value="1">
-                        </div>
-                        <span class="item__discount alert">Buy 2 Get 1 Free.</span>
 
+                        <div class="item__info">
+                            <span class="item__name">Item B</span>
+                            <span class="item__price">$70.00</span>
+                            <div class="quantity__container">
+                                <span class="quantity__label">Quantity:</span>
+                                <input class="quantity__value" id="quantityValue" type="number" value="1">
+                            </div>
+                            <span class="item__discount alert">Buy 2 Get 1 Free.</span>
+                        </div>
                     </div>
 
                     <div class="items__column method3">
@@ -114,13 +117,14 @@
                             <img src="img/item-c.jpg" alt="">
                         </div>
 
-                        <span class="item__name">Item C</span>
-                        <span class="item__price">$10.00</span>
-                        <div class="quantity__container">
-                            <span class="quantity__label">Quantity:</span>
-                            <input class="quantity__value" id="quantityValue" type="number" value="2">
+                        <div class="item__info">
+                            <span class="item__name">Item C</span>
+                            <span class="item__price">$10.00</span>
+                            <div class="quantity__container">
+                                <span class="quantity__label">Quantity:</span>
+                                <input class="quantity__value" id="quantityValue" type="number" value="1">
+                            </div>
                         </div>
-
                     </div>
 
                     <div class="items__column">
@@ -129,15 +133,15 @@
                             <img src="img/item-d.jpg" alt="">
                         </div>
 
-                        <span class="item__name">Item D</span>
-                        <span class="item__price">$20.00</span>
-                        <div class="quantity__container">
-                            <span class="quantity__label">Quantity:</span>
-                            <input class="quantity__value" id="quantityValue" type="number" value="1">
+                        <div class="item__info">
+                            <span class="item__name">Item D</span>
+                            <span class="item__price">$20.00</span>
+                            <div class="quantity__container">
+                                <span class="quantity__label">Quantity:</span>
+                                <input class="quantity__value" id="quantityValue" type="number" value="1">
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
             </section>
 
@@ -148,7 +152,7 @@
                     <div class="subtotal__content--wrapper">
                         <div class="subtotal__container">
                                 <span class="subtotal__name">Items:</span>
-                                <div class="subtotal__output">-</div>
+                                <div class="subtotal__output"></div>
                         </div>
 
                         <div class="subtotal__container">
@@ -163,12 +167,13 @@
                     <!-- line -->
                     <div class="subtotal__container">
                         <span class="order__total">Order Total:</span>
-                        <span class="total__output">-</span>
+                        <span class="total__output"></span>
                     </div>
                     <button class="btn btn__lg">Place Order</button>
                 </div>
             </section>
         </main>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

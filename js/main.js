@@ -28,6 +28,6 @@ function updateCartTotal() {
     total = total + price * quantity;
   }
   total = Math.round(total * 100) / 100;
-  document.querySelector('.total__output').innerText = '$' + total;
-  document.querySelector('.subtotal__output').innerText = '$' + total;
+  document.querySelectorAll('.total__output')[0].innerText = '$' + total;
+  document.querySelectorAll('.subtotal__output')[0].innerText = '$' + total;
 }
