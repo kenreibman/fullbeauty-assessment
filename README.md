@@ -38,7 +38,6 @@ Assume items in the order are
 // C | 10 | -
 // D | 20 | -
 
-- Responsive Portfolio Website Using HTML CSS & JavaScript
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 - Calculates order total depending on quantity of items.
